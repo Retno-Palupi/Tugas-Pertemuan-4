@@ -1,0 +1,137 @@
+/* 1. SELECTOR UNIVERSAL
+   Mengatur perhitungan ukuran semua elemen */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. SELECTOR ELEMEN
+   Mengatur tampilan dasar seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #eef2f8; /* Warna format HEX */
+    color: #333333;
+    margin: 0;
+    padding: 30px 15px;
+    line-height: 1.6;
+}
+
+/* 3. SELECTOR CLASS */
+.kartu-biodata {
+    width: 600px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white; /* Warna berdasarkan nama */
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+}
+
+/* SELECTOR CLASS
+   Mengatur posisi foto agar berada di tengah */
+.foto-profil {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* SELECTOR ELEMEN */
+h2 {
+    color: rgb(49, 76, 150);
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* SELECTOR TURUNAN (DESCENDANT) */
+.keahlian span{
+    background-color: #0749e2;
+    display: inline-block;
+    background-color: #e1eaff;
+    color: #314c96;
+    padding: 6px 12px;
+    margin: 3px;
+    border: 1px solid #b8c9ef;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/* SELECTOR CLASS
+   Mengatur posisi bagian tombol */
+.kontak {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* SELECTOR CLASS
+   Mengatur tautan agar terlihat seperti tombol
+   DISPLAY INLINE-BLOCK KEDUA */
+.tombol {
+    display: inline-block;
+    background-color: #314c96;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* SELECTOR CLASS
+   Mengatur tampilan tabel biodata */
+.tabel-biodata {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 4. SELECTOR ID 
+    Mengatur judul utama halaman */
+#judul {
+    color: #314c96;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* 5. SELECTOR GRUP
+   Mengatur beberapa elemen sekaligus */
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* 6. SELECTOR TURUNAN (DESCENDANT)
+   Mengatur gambar yang berada di dalam
+   elemen dengan class foto-profil */
+.foto-profil img {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid #d6deef;
+    border-radius: 10px;
+}
+
+/* Mengatur kolom nama informasi */
+.tabel-biodata td:first-child {
+    width: 125px;
+    font-weight: bold;
+    color: #314c96;
+}
+
+/* Mengatur kolom tanda titik dua */
+.tabel-biodata td:nth-child(2) {
+    width: 15px;
+}
+
+/* SELECTOR TURUNAN (DESCENDANT)
+   Mengatur paragraf di dalam bagian Tentang Saya */
+.tentang-saya p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-top: 0;
+}
+
+.tombol:hover {
+    background-color: #0da8e5;
+    
+}
